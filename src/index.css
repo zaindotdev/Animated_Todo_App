@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: Gilroy;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
