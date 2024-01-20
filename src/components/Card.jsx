@@ -27,7 +27,7 @@ function Card({ reference }) {
           whileDrag={{ scale: 1.1 }}
           dragTransition={{ bounceStiffness: 300, bounceDamping: 200 }}
           dragElastic={0.2}
-          className="h-80 w-64 bg-zinc-600 rounded-[20px] p-5 text-zinc-100 relative z-50"
+          className="h-80 w-64 bg-zinc-600 rounded-[20px] p-5 text-zinc-100 relative z-50 border-2 border-gray-100"
           key={prev.id}
         >
           <FaRegFileAlt />
