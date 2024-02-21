@@ -1,3 +1,4 @@
+import React from "react";
 import { useDispatch } from "react-redux";
 import { addDoc } from "../features/docSlice";
 import { useState } from "react";
@@ -8,7 +9,8 @@ export default function Form() {
 
   const addTask = (e) => {
     e.preventDefault();
-    dispatch(addDoc({ text: title, desc: desc }));
+    if (title !== "" && desc !== "")
+      dispatch(addDoc({ text: title, desc: desc }));
     settitle("");
     setdesc("");
   };

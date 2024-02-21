@@ -25,7 +25,7 @@ function Foreground() {
           {openClose}
         </button>
         {toggle ? <Form /> : ""}
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap m-4">
           <Card reference={ref} />
         </div>
       </div>
